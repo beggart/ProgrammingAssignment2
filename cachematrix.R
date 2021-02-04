@@ -5,27 +5,27 @@
 
 makeCacheMatrix <- function(x = matrix()) {
   
-  #initialize
+  ## initialize
   a <- NULL
   
-  # set matrix
+  ## set matrix
   set <- function(y) {
     x <<- y
     a <<- NULL
   } 
   
-  # get matrix
+  ##  get matrix
   get <- function() {
     ## Return the matrix
     x
   }
   
-  # set the inverse of the matrix
+  ##  set the inverse of the matrix
   setInverse <- function(inverse) {
     a <<- inverse
   }
   
-  # get the inverse of the matrix
+  ##  get the inverse of the matrix
   getInverse <- function() {
     ## return the inverse property
     a
@@ -51,7 +51,7 @@ cacheSolve <- function(x, ...) {
     return(m)
   }
   
-  #get the matrix
+  ## get the matrix
   data <- x$get()
   
   ## calculate the inverse using matrix multiplication
