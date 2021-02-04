@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
     ## Return the matrix
     x
   }
-
+  
   # set the inverse of the matrix
   setInverse <- function(inverse) {
     a <<- inverse
@@ -62,5 +62,5 @@ cacheSolve <- function(x, ...) {
   
   ## return the matrix
   m
-
+  
 }
